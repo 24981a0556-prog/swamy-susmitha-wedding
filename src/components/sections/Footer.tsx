@@ -79,6 +79,29 @@ export function Footer() {
 
       {/* Bottom Temple Frieze Border */}
       <TempleBorder />
+
+      {/* Promotional Website Contact Line */}
+      <div className="w-full bg-[#f7efdc] border-t border-[#c4942e]/40 py-3.5 px-4 text-center select-text">
+        <p className="font-display text-xs sm:text-sm text-[#5c0f1c] font-normal leading-relaxed max-w-3xl mx-auto">
+          For wedding websites, birthday wishes website, or any kind of website, contact:{' '}
+          <a
+            href="tel:6301302802"
+            className="font-semibold text-[#7d1727] hover:text-[#c4942e] underline decoration-[#c4942e]/60 underline-offset-2 transition-colors inline-block"
+          >
+            6301302802
+          </a>{' '}
+          or{' '}
+          <a
+            href="https://wa.me/916301302802"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#2c5932] hover:text-[#1e3f23] underline decoration-[#2c5932]/60 underline-offset-2 transition-colors inline-block"
+          >
+            WhatsApp
+          </a>
+          .
+        </p>
+      </div>
     </footer>
   );
 }
