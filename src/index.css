@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/*
+ * Swamy & Susmitha Wedding — Traditional Royal Indian Temple Aesthetic
+ * Inspired directly by South Indian Temple Architecture & Mysore/Tirupati Art
+ * =========================================================================
+ * Background: Warm Ivory & Vintage Temple Parchment
+ * Accents: Royal Kumkum Maroon (#80142B), Temple Antique Gold (#C99A38), Mango Leaf Green
+ * Typography: Cinzel, Cormorant Garamond, Great Vibes, Inter
+ */
+
+@theme {
+  --font-royal: "Cinzel", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-accent: "Great Vibes", cursive;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-canvas-50: #fefdfa;
+  --color-canvas-100: #fcf8f0;
+  --color-canvas-200: #f7f0df;
+  --color-canvas-300: #ede0c4;
+  --color-canvas-400: #dcc8a0;
+
+  --color-maroon-950: #420813;
+  --color-maroon-900: #5c0f1c;
+  --color-maroon-800: #7d1727;
+  --color-maroon-700: #961d31;
+  --color-maroon-600: #b32942;
+
+  --color-gold-900: #5c410c;
+  --color-gold-800: #7d5a13;
+  --color-gold-700: #a1761e;
+  --color-gold-600: #c4942e;
+  --color-gold-500: #dbaa3e;
+  --color-gold-400: #ecc261;
+  --color-gold-300: #f5d98e;
+
+  --color-terracotta: #8f4f3e;
+  --color-leaf-green: #2c5932;
+  --color-kumkum: #ad2022;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #fcf8f0;
+  color: #420813;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fcf8f0;
+  color: #420813;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utility Classes */
+.font-royal {
+  font-family: var(--font-royal);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Subtle Rangoli / Kolam Geometric Watermark Pattern */
+.bg-kolam-pattern {
+  background-color: #fcf8f0;
+  background-image: radial-gradient(#c4942e 0.75px, transparent 0.75px), radial-gradient(#961d31 0.75px, #fcf8f0 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-kolam-light {
+  background-color: #fcf8f0;
+  background-image: 
+    radial-gradient(circle, rgba(196, 148, 46, 0.12) 1.5px, transparent 1.5px),
+    radial-gradient(circle, rgba(150, 29, 49, 0.08) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Traditional Carved Temple Stone Background for Countdown */
+.bg-temple-stone {
+  background: linear-gradient(180deg, #d8b881 0%, #c49e62 30%, #b2894b 70%, #9e7539 100%);
+  box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.25), inset 0 -3px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Gold Foil Gradient Text */
+.gold-text-foil {
+  background: linear-gradient(135deg, #7d5a13 0%, #c4942e 40%, #dbaa3e 60%, #7d5a13 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-gradient-text {
+  background: linear-gradient(135deg, #7d1727 0%, #ad2022 50%, #5c0f1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Traditional Indian Red & Gold Border Frieze */
+.temple-border-top {
+  height: 12px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  border-top: 2px solid #7d1727;
+  border-bottom: 2px solid #c4942e;
+}
+
+/* Traditional Paper Card Shadow & Border */
+.invitation-card {
+  background: #fefdfa;
+  border: 1px solid rgba(196, 148, 46, 0.45);
+  box-shadow: 0 4px 20px -2px rgba(92, 15, 28, 0.08), 0 2px 6px -1px rgba(196, 148, 46, 0.15);
+}
+
+.invitation-card-ornate {
+  background: #fdfaf3;
+  border: 2px solid #c4942e;
+  box-shadow: 
+    0 0 0 4px #fdfaf3,
+    0 0 0 6px #7d1727,
+    0 10px 30px rgba(92, 15, 28, 0.12);
+}
+
+/* Sound Wave Bars for Traditional Bell / Music */
+@keyframes soundPulse {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.sound-bar-1 { animation: soundPulse 0.8s infinite ease-in-out; }
+.sound-bar-2 { animation: soundPulse 0.6s infinite ease-in-out 0.2s; }
+.sound-bar-3 { animation: soundPulse 0.9s infinite ease-in-out 0.4s; }
+
+/* Custom Scrollbar in Indian Maroon & Gold */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fcf8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4942e;
+  border-radius: 4px;
+  border: 1px solid #7d1727;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7d1727;
+}
