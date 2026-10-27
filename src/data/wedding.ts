@@ -297,9 +297,14 @@ export const RSVP_CONFIG = {
 
 // ─── Pre-Wedding Video ──────────────────────────────────────
 
+const PRE_WEDDING_YOUTUBE_ID = 'COsJD09t3qY';
+
 export const VIDEO_CONFIG = {
-  /** Set to a YouTube video ID when available (e.g., 'dQw4w9WgXcQ') */
-  youtubeVideoId: null as string | null,
+  /** YouTube video ID */
+  youtubeVideoId: PRE_WEDDING_YOUTUBE_ID,
+  shortsUrl: `https://youtube.com/shorts/${PRE_WEDDING_YOUTUBE_ID}`,
+  embedUrl: `https://www.youtube.com/embed/${PRE_WEDDING_YOUTUBE_ID}`,
+  thumbnailUrl: `https://img.youtube.com/vi/${PRE_WEDDING_YOUTUBE_ID}/hqdefault.jpg`,
   channelUrl: 'https://www.youtube.com/@Rudraclicks-c3j',
   title: 'Our Pre-Wedding Film',
   subtitle: 'A glimpse into our love story',
